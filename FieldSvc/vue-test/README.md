@@ -1,29 +1,49 @@
-# vue-test
+# Тестовое задание
 
-## Project setup
+Описание тестового задания находится по ссылке [https://github.com/hellboywar/test](https://github.com/hellboywar/test). Был использован макет `FE-Test.sketch` через браузерное приложение [Figma](https://www.figma.com/).
+
+Рабочий стек настроен через `vue-cli`, используется `TypeScript`.
+
+## Установка
+
+Требуется установленный [Node.JS](https://nodejs.org/). Для установки зависимостей необходимо выполнить команду:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Команда [кодогенерации](#code-gen), компиляции и запуска сервера разработки
+```
+npm run start
+```
+
+### Команда компиляции и запуска сервера разработки
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Команда компиляции и запуска сервера разработки
+```
+npm run serve
+```
+
+### Команда компиляции и минификации для прода
 ```
 npm run build
 ```
 
-### Run your unit tests
+### Команда запуска юнит-тестов (не используются)
 ```
 npm run test:unit
 ```
 
-### Lints and fixes files
+### Команда проверки стиля кода
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<a name="code-gen"></a>
+## Кодогенерация и ресурсы
+
+Были использованы предоставленные строковые ресурсы `ru-RU.json`, расширены и дополнены для остальной части UI. Также были добавлены строковые ресурсы `en-US.json`.
+
+Чтобы в коде работал intellisense для строковых ресурсов, написан кодогенератор [LocaleTypeCodeGenerator.js](./LocaleTypeCodeGenerator.js). Кодогенерация выполняется в файл [LocaleDictionary.ts](./src/store/LocaleDictionary.ts). Это позволит сократить количество ошибок при использовании ресурсов.
