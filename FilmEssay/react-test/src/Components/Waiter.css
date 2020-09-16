@@ -1,0 +1,8 @@
+﻿div.waiter div.text {
+    display: inline-block;
+}
+
+div.waiter svg.waiter circle.planet {
+    transform-origin: center;
+    animation: planet-rotation 2s linear infinite;
+}

@@ -1,0 +1,87 @@
+﻿div.review-form div.textbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+div.review-form div.textbox label {
+    margin: 0 0.5em 0.5em 0;
+}
+
+div.review-form div.textbox input {
+    margin: 0 0 0.5em 0;
+}
+
+div.review-form div.textarea {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+div.review-form div.textarea label {
+    display: block;
+}
+
+div.review-form div.textarea textarea {
+    height: 5em;
+    margin: 0 0 0.5em 0;
+}
+
+div.modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.modal-dialog div.background {
+    position: absolute;
+    background-color: #ffffff;
+    opacity: .5;
+}
+
+div.modal-dialog div.window {
+    width: 20em;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    z-index: 3;
+    user-select: none;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+div.modal-dialog div.window div.header {
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    background-color: #8661C5;
+    color: #ffffff;
+}
+
+div.modal-dialog div.window div.body {
+    background-color: #512BD4;
+    color: #ffffff;
+    padding: 0.5em 1em 0 1em
+}
+
+div.modal-dialog div.window div.body div.buttons {
+    text-align: center;
+    margin: 1em;
+}
+
+div.modal-dialog div.window div.body div.buttons button {
+    width: 6em;
+    height: 2em;
+}
+
+div.review-form div.review {
+    margin-top: 3em;
+}
+
+div.review-form div.review div.header {
+    background-color: #9671d5;
+    font-size: 1em;
+    padding: .5em 0;
+}
+
+div.review-form div.review p {
+    font-style: italic;
+}
